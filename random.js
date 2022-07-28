@@ -12,7 +12,6 @@ const images = ["hoshi1.jpg", "hoshi2.jpg", "hoshi3.jpg", "hoshi4.jpg", "hoshi5.
 "joshua1.jpg", "joshua2.jpg", "joshua3.jpg", "joshua4.jpg", "joshua5.jpg"
 ];
 
-const restartButton = document.querySelector("#restartButton");
 const photozone = document.querySelector("#photo");
 
 function getPhoto() {
@@ -25,11 +24,17 @@ function getPhoto() {
 getPhoto();
 let inT = setInterval(getPhoto, 10);
 
-restartButton.addEventListener("click", function() {
-  getPhoto();
-  inT = setInterval(getPhoto, 10);
-});
+let c = 0;
 
 photozone.addEventListener("click", function() {
-  clearInterval(inT);
+
+  if(c===0) {
+    clearInterval(inT);
+    c = 1;
+  } else if(c===1) {
+    getPhoto();
+    inT = setInterval(getPhoto, 10);
+    c = 0;
+  }
+
 });
