@@ -119,6 +119,7 @@ section {
     flex-shrink: 1;
 
     background-size: cover;
+    overflow: auto;
     width: 60%;
     padding-bottom: 60%;
 }
