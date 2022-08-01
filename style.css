@@ -110,8 +110,6 @@ nav button:nth-child(13) {
 }
 
 section {
-    position: relative;
-    padding-bottom: 30%;
     display: flex;
     flex-basis: 560px;
     min-height: 560px;
@@ -120,8 +118,8 @@ section {
 
     flex-grow: 1;
     flex-shrink: 1;
-}
 
-img {
-    position: absolute;
+    background-size: cover;
+    width: 60%;
+    padding-bottom: 60%;
 }

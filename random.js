@@ -12,7 +12,7 @@ const images = ["hoshi1.jpg", "hoshi2.jpg", "hoshi3.jpg", "hoshi4.jpg", "hoshi5.
 "joshua1.jpg", "joshua2.jpg", "joshua3.jpg", "joshua4.jpg", "joshua5.jpg"
 ];
 
-const photozone = document.querySelector("#photo");
+const photozone = document.querySelector("section");
 
 function getPhoto() {
   const chosenImage = images[Math.floor(Math.random() * images.length)];
