@@ -17,6 +17,8 @@ body {
 header {
     grid-area: header;
     display: flex;
+
+    flex-shrink: 1;
 }
 
 #content {
