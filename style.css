@@ -119,6 +119,6 @@ section {
     flex-grow: 1;
     flex-shrink: 1;
 
-    background-size: 500px 500px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
