@@ -17,14 +17,14 @@ const image = "random.png";
 const photozone = document.querySelector("section");
 
 function getPhoto() {
-  // const chosenImage = images[Math.floor(Math.random() * images.length)];
-  // const randomImage = document.createElement("img");
-  // randomImage.src = `${chosenImage}`;
-  // photozone.style.backgroundImage = `url(${randomImage.src})`;
-
+  const chosenImage = images[Math.floor(Math.random() * images.length)];
   const randomImage = document.createElement("img");
-  randomImage.src = `${image}`
-  photozone.style.backgroundImage = `url(${randomImage.src})`
+  randomImage.src = `${chosenImage}`;
+  photozone.style.backgroundImage = `url(${randomImage.src})`;
+
+  // const randomImage = document.createElement("img");
+  // randomImage.src = `${image}`
+  // photozone.style.backgroundImage = `url(${randomImage.src})`
 }
 
 getPhoto();
