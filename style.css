@@ -118,7 +118,9 @@ section {
 
     flex-grow: 1;
     flex-shrink: 1;
+}
 
-    background-size: cover;
-    background-repeat: no-repeat;
+img {
+    max-width: 100%;
+    height: auto;
 }
