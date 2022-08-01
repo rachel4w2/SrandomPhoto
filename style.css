@@ -29,7 +29,7 @@ header {
 
 nav {
     display: grid;
-    width: 400px;
+    flex-basis: 400px;
 
     flex-grow: 1;
     flex-shrink: 1;
@@ -109,7 +109,7 @@ nav button:nth-child(13) {
 
 section {
     display: grid;
-    width: 500px;
+    flex-basis: 500px;
     background-color: aqua;
 
     flex-grow: 1;
