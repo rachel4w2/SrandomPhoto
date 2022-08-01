@@ -12,6 +12,8 @@ const images = ["hoshi1.jpg", "hoshi2.jpg", "hoshi3.jpg", "hoshi4.jpg", "hoshi5.
 "joshua1.jpg", "joshua2.jpg", "joshua3.jpg", "joshua4.jpg", "joshua5.jpg"
 ];
 
+const image = "random.png";
+
 const photozone = document.querySelector("section");
 
 function getPhoto() {
@@ -19,22 +21,26 @@ function getPhoto() {
   const randomImage = document.createElement("img");
   randomImage.src = `${chosenImage}`;
   photozone.style.backgroundImage = `url(${randomImage.src})`;
+
+  // const randomImage = document.createElement("img");
+  // randomImage.src = `${image}`
+  // photozone.style.backgroundImage = `url(${randomImage.src})`
 }
 
 getPhoto();
-let inT = setInterval(getPhoto, 10);
+// let inT = setInterval(getPhoto, 10);
 
-let c = 0;
+// let c = 0;
 
-photozone.addEventListener("click", function() {
+// photozone.addEventListener("click", function() {
 
-  if(c===0) {
-    clearInterval(inT);
-    c = 1;
-  } else if(c===1) {
-    getPhoto();
-    inT = setInterval(getPhoto, 10);
-    c = 0;
-  }
+//   if(c===0) {
+//     clearInterval(inT);
+//     c = 1;
+//   } else if(c===1) {
+//     getPhoto();
+//     inT = setInterval(getPhoto, 10);
+//     c = 0;
+//   }
 
-});
+// });
