@@ -39,7 +39,8 @@ nav {
 section {
     flex-basis: 500px;
     flex-grow: 1;
-    min-height: 500px;
+    flex-shrink: 1;
+    min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
