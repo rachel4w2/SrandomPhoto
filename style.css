@@ -11,6 +11,7 @@ body {
     display: grid;
     grid-template: "header" 1fr
                    "content" 3fr;
+    overflow: auto;
 }
 
 header {
@@ -30,6 +31,7 @@ header {
 nav {
     display: grid;
     flex-basis: 400px;
+    min-height: 100px;
 
     flex-grow: 1;
     flex-shrink: 1;
@@ -110,6 +112,7 @@ nav button:nth-child(13) {
 section {
     display: grid;
     flex-basis: 500px;
+    min-height: 560px;
     background-color: aqua;
 
     flex-grow: 1;
