@@ -9,8 +9,8 @@ body {
     margin: 0;
     background-color:#ff7f50;
     display: grid;
-    grid-template: "header header" 1fr
-                   "nav section" 3fr / 1fr 1fr;
+    grid-template: "header" 1fr
+                   "content" 3fr;
 }
 
 header {
@@ -18,11 +18,20 @@ header {
     display: flex;
 }
 
-nav {
-    grid-area: nav;
-    display: grid;
+#content {
+    grid-area: content;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+nav {
+    display: grid;
+    width: 400px;
+
+    flex-grow: 1;
 
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -98,6 +107,9 @@ nav button:nth-child(13) {
 }
 
 section {
-    grid-area: section;
     display: grid;
+    width: 500px;
+    background-color: aqua;
+
+    flex-grow: 1;
 }
