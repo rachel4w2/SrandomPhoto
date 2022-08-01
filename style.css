@@ -10,7 +10,7 @@ body {
     background-color:#ff7f50;
     display: grid;
     grid-template: "header" 1fr
-                   "content" 3fr;
+                   "content" 5fr;
     overflow: auto;
 }
 
