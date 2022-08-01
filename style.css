@@ -32,6 +32,7 @@ nav {
     width: 400px;
 
     flex-grow: 1;
+    flex-shrink: 1;
 
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -112,4 +113,5 @@ section {
     background-color: aqua;
 
     flex-grow: 1;
+    flex-shrink: 1;
 }
