@@ -110,11 +110,15 @@ nav button:nth-child(13) {
 }
 
 section {
-    display: grid;
+    display: flex;
     flex-basis: 500px;
     min-height: 560px;
-    background-color: aqua;
+    justify-content: center;
+    align-items: center ;
 
     flex-grow: 1;
     flex-shrink: 1;
+
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
 }
