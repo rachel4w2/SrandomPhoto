@@ -112,6 +112,7 @@ nav button:nth-child(13) {
 section {
     display: flex;
     flex-basis: 560px;
+    max-width: fit-content;
     min-height: 300px;
     justify-content: center;
     align-items: center ;
